@@ -1,0 +1,116 @@
+
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{% block title %} Education {% endblock %}</title>
+    {% include 'header.html' %}
+</head>
+<body>
+{% block content %}
+<div class="container-fluid" style="margin-top: 75px;">
+{% include 'nav.html' %}
+<div class="container">
+    <div class="row">
+    <div class="col-sm-12">
+        <div class="card bg-danger text-white" style="height: 50px;">
+
+    <div class="card-body" style="text-align:left; margin-top: -10px;">
+        <h3>Education</h3>
+    </div>
+        </div>
+    </div>
+    </div>
+    </div>
+     <!-- B.B.C  -->
+<div class="row"> <div class="col-sm-12" style="background-color: white; margin-top: 10px;"></div></div>
+<div class="container">
+        <div class="row">
+            <div class="col-sm-8" style="background-color: rgb(0, 240, 162);">
+                <h3 class="text-dark"><b>Batchelor of Business Studies(B.B.S) </b></h3>
+            </div>
+            <div class="col-sm-4" style="background-color: rgb(0, 240, 162);">
+                <h4 class="text-white">January 2016 to December 2018</h4>
+            </div>
+        </div>
+</div>
+<div class="row"> <div class="col-sm-12" style="background-color: white; margin-top: 10px;"></div></div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6" style="background-color: DodgerBlue;">
+            <h3 style="color: white;">Institute Name: <b>Govt. Tolaram College</b></h3>
+            <h3 style="color: white;">Board: <b>Bangladesh Open University</b></h3>
+            <h3 style="color: white;">Group : <b>Commerce</b></h3>
+            <h3 style="color: white;">Result: <b>3.20(1<sup>st</sup> Class)</b></h3>
+        </div>
+        <div class="col-sm-6" style="background-color: DodgerBlue;">
+             <img src="{% static 'img/img2.jpg' %}" class="img-thumbnail" alt="Responsive image" style="height: 150px; width: 95%; margin-top: 8px;">
+        </div>
+    </div>
+</div>
+    <!-- H.S.C  -->
+<div class="row"> <div class="col-sm-12" style="background-color: white; margin-top: 10px;"></div></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8" style="background-color: rgb(0, 240, 162);">
+                <h3 class="text-dark"><b>Higher Secondary School Certificate(HSC)</b></h3>
+            </div>
+            <div class="col-sm-4" style="background-color: rgb(0, 240, 162);">
+                <h4 class="text-white">January 2006 to December 2008</h4>
+            </div>
+        </div>
+    </div>
+<div class="row"> <div class="col-sm-12" style="background-color: white; margin-top: 10px;"></div></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6" style="background-color: rgb(169, 18, 210);">
+                <h3 style="color: white;">Institute Name: <b>Hazi Misir Ali College</b></h3>
+                <h3 style="color: white;">Board : <b>Dhaka</b></h3>
+                <h3 style="color: white;">Group : <b>Science</b></h3>
+                <h3 style="color: white;">Result: <b>2.90(C)</b></h3>
+            </div>
+            <div class="col-sm-6" style="background-color: rgb(169, 18, 210);;">
+                <img src="{% static 'img/HSC1.jpg' %}" class="img-thumbnail" alt="Responsive image" style="height: 150px; width: 95%; margin-top: 8px;">
+            </div>
+        </div>
+    </div>
+
+<!-- S.S.C  -->
+<div class="row"> <div class="col-sm-12" style="background-color: white; margin-top: 10px;"></div></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8" style="background-color: rgb(0, 240, 162);">
+                <h3 class="text-dark"><b>Secondary School Certificate(SSC)</b></h3>
+            </div>
+            <div class="col-sm-4" style="background-color: rgb(0, 240, 162);">
+                <h4 class="text-white">January 2006 to December 2008</h4>
+            </div>
+        </div>
+    </div>
+<div class="row"> <div class="col-sm-12" style="background-color: white; margin-top: 10px;"></div></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6" style="background-color: tomato;">
+                <h3 style="color: white;">Institute Name: <b>Delpara High School</b></h3>
+                <h3 style="color: white;">Board : <b>Dhaka</b></h3>
+                <h3 style="color: white;">Group : <b>Science</b></h3>
+                <h3 style="color: white;">Result: <b>3.63(A-)</b></h3>
+            </div>
+            <div class="col-sm-6" style="background-color: tomato;">
+                <img src="{% static 'img/ssc.jpg' %}" class="img-thumbnail" alt="Responsive image" style="height: 150px; width: 95%; margin-top: 8px;">
+            </div>
+        </div>
+    </div>
+<div class="row"> <div class="col-sm-12" style="background-color: white; margin-top: 10px;"></div></div>
+
+ <!-- FOOTER -->
+<div class="row">
+   <div class="col-sm-12">
+        {% include 'footer.html' %}
+   </div>
+</div>
+{% endblock %}
+</div>
+</body>
+</html>

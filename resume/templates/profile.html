@@ -1,0 +1,61 @@
+
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{% block title %} Profile {% endblock %}</title>
+    {% include 'header.html' %}
+</head>
+<body>
+{% block content %}
+<div class="container-fluid" style="margin-top: 75px;">
+
+<div class="container">
+    <div class="row">
+    <div class="col-sm-12">
+        <img src="{% static 'img/img2.jpg' %}" class="img-fluid" alt="Responsive image" style="height: 300px; width: 100%;">
+    </div>
+    </div>
+    </div>
+    <div class="row"> <div class="col-sm-12" style="background-color: white; margin-top: 10px;"></div></div>
+<div class="container">
+    <div class="row">
+    <div class="col-sm-4">
+        <img src="{% static 'img/img3.jpg' %}" class="rounded-circle" alt="Cinque Terre" style="height: 200px; width: 100%;">
+    </div>
+    <div class="col-sm-8">
+        <h1>Who am I?</h1>
+        <p>I am <b>Mohammad Nabir Hossain</b> son of late <b>Bashir Uddin</b>. I’m a highly skilled IT & stock control professionals with 8+ years of experience and demonstrated expertise in all phases of Store like that Store spare parts, Store Yarn, Raw materials, software and computer works. A fast paced learner and enthusiast of new working module and technologies. Capable of working on a team.</p>
+        <p>I have an advanced knowledge of store experience and I’m looking to develop my career in a supervisory role focusing on high profile projects</p>
+    </div>
+
+    </div>
+    </div>
+    <div class="row"> <div class="col-sm-12" style="background-color: white; margin-top: 10px;"></div></div>
+<div class="container">
+    <div class="row">
+    <div class="col-sm-6">
+        <h4 class="bg-primary text-white">Name: Mohammad Nabir Hossian</h4>
+        <p class="text-priamry"><b>Date of Birth:</b> 05<sup>th</sup> September 1991.</p>
+        <p class="text-primary"><b>Address:</b>Nandalalpur, Pagla, Narayangonj.</p>
+
+    </div>
+    <div class="col-sm-6">
+
+        <p class="text-white bg-dark">Mobile: 01719337456, 01625265685</p>
+        <p>Web: www.talukdernobin.com</p>
+        <p>Email: nabirhossain13@gmail.com</p>
+    </div>
+
+    </div>
+<div class="row">
+    <div class="col-sm-12">
+        {% include 'footer.html' %}
+    </div>
+</div>
+</div>
+</div>
+{% endblock %}
+</body>
+</html>

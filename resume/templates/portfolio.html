@@ -1,0 +1,131 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>{% block title %} Portfolio {% endblock %}</title>
+    {% include 'header.html' %}
+
+</head>
+<body>
+{% block content %}
+<div class="container-fluid" style="margin-top: 75px;">
+{% include 'nav.html' %}
+<div class="container">
+    <div class="row">
+    <div class="col-sm-12">
+        <div class="card bg-danger text-white" style="height: 50px;">
+
+    <div class="card-body" style="text-align:left; margin-top: -10px;">
+        <h3>Portfolio</h3>
+    </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="row"> <div class="col-sm-12" style="background-color: white; margin-top: 10px;"></div></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12" style="background-color: DodgerBlue; text-align: center;">
+                <h3 class="text-dark"><b>Microsoft Excel Portfolio</b></h3>
+            </div>
+
+        </div>
+    </div>
+    <!-- Portfolio image for EXCEl -->
+<div class="row"> <div class="col-sm-12" style="background-color: white; margin-top: 10px;"></div></div>
+    <div class="container">
+        <div class="row" style="text-align: center;">
+            <div class="col-sm-4">
+                <a class="example-image-link" href="{% static 'img/payslip1.png' %}" data-lightbox="example-set" data-title="Employer Basic information sheet.">
+                    <img class="example-image" src="{% static 'img/vlookup.jpeg' %}" alt="" style="height: 100%; width: 100%;"/>
+                </a>
+                <a class="example-image-link" href="{% static 'img/atten_reg.png' %}" data-lightbox="example-set" data-title="Employer Attendance register using data validation, vlookup and countif formula "></a>
+                <a class="example-image-link" href="{% static 'img/salary_slip.png' %}" data-lightbox="example-set" data-title="Automatic create salary slip using vlookup and sumif formula."></a>
+                <a class="example-image-link" href="{% static 'img/em_y_ex.png' %}" data-lightbox="example-set" data-title="Calculate an employer year of experience "></a>
+            </div>
+
+            <div class="col-sm-4">
+                <a class="example-image-link" href="{% static 'img/find_emp_in_year.png' %}" data-lightbox="example-set" data-title="Find number of employees in particular date/month, department & country.">
+                    <img class="example-image" src="{% static 'img/IfFormula.jpg' %}" alt="" style="height: 100%; width: 100%;"/>
+                </a>
+                <a class="example-image-link" href="{% static 'img/diff_rig.png' %}" data-lightbox="example-set" data-title="Find total salary expense in different region, department and country"></a>
+                <a class="example-image-link" href="{% static 'img/part-com.png' %}" data-lightbox="example-set" data-title="Count number of manager or any designation in particular company. "></a>
+                <a class="example-image-link" href="{% static 'img/count_num_date.png' %}" data-lightbox="example-set" data-title="Counting the number of dates with matching month."></a>
+            </div>
+
+            <div class="col-sm-4">
+                <a class="example-image-link" href="{% static 'img/PT.png' %}" data-lightbox="example-set" data-title="Pivot table data.">
+                    <img class="img-fluid" src="{% static 'img/excelpivot.png' %}" alt="" style="height: 100%; width: 100%;"/>
+                </a>
+                <a class="example-image-link" href="{% static 'img/PT1.png' %}" data-lightbox="example-set" data-title="Calculate Sum of account by account type."></a>
+                <a class="example-image-link" href="{% static 'img/PT2.png' %}" data-lightbox="example-set" data-title="Calculate Sum of account by date."></a>
+                <a class="example-image-link" href="{% static 'img/PT3.png' %}" data-lightbox="example-set" data-title="Calculate Sum of account by weekday"></a>
+                <a class="example-image-link" href="{% static 'img/PT4.png' %}" data-lightbox="example-set" data-title="Calculate Sum of account by branch."></a>
+                <a class="example-image-link" href="{% static 'img/PT5.png' %}" data-lightbox="example-set" data-title="Calculate count of amount by range for total percent of amount."></a>
+                <a class="example-image-link" href="{% static 'img/PT6.png' %}" data-lightbox="example-set" data-title="Calculate opening person account type, qty and percentage."></a>
+                <a class="example-image-link" href="{% static 'img/PT7.png' %}" data-lightbox="example-set" data-title="Showing data with chart."></a>
+                <a class="example-image-link" href="{% static 'img/PT8.png' %}" data-lightbox="example-set" data-title="Count of amount for opening person."></a>
+            </div>
+
+
+        </div>
+    </div>
+
+<div class="row"> <div class="col-sm-12" style="background-color: white; margin-top: 10px;"></div></div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12" style="background-color: Black; text-align: center;">
+                <h3 class="text-light"><b>PrimeApps and Prime ERP Portfolio</b></h3>
+        </div>
+
+        </div>
+    </div>
+    <!-- Portfolio image -->
+<div class="row"> <div class="col-sm-12" style="background-color: white; margin-top: 10px;"></div></div>
+    <div class="container">
+        <div class="row" style=" text-align: center;">
+            <div class="col-sm-4">
+                <a class="example-image-link" href="{% static 'img/atten_reg.png' %}" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+                    <img class="example-image" src="{% static 'img/vlookup.jpeg' %}" alt="" style="height: 100%; width: 100%;"/>
+                </a>
+                <a class="example-image-link" href="{% static 'img/profile_img.jpg' %}" data-lightbox="example-set" data-title="Or press the right arrow on your keyboard."></a>
+                <a class="example-image-link" href="{% static 'img/HSC1.jpg' %}" data-lightbox="example-set" data-title="The next image in the set is preloaded as you're viewing."></a>
+                <a class="example-image-link" href="{% static 'img/ssc.jpg' %}" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close."></a>
+            </div>
+
+            <div class="col-sm-4">
+                <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-3.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+                    <img class="example-image" src="{% static 'img/IfFormula.jpg' %}" alt="" style="height: 100%; width: 100%;"/>
+                </a>
+                <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-4.jpg" data-lightbox="example-set" data-title="Or press the right arrow on your keyboard."></a>
+                <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-5.jpg" data-lightbox="example-set" data-title="The next image in the set is preloaded as you're viewing."></a>
+                <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-6.jpg" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close."></a>
+            </div>
+
+            <div class="col-sm-4">
+                <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-3.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+                    <img class="img-fluid" src="{% static 'img/excelpivot.png' %}" alt="" style="height: 100%; width: 100%;"/>
+                </a>
+                <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-4.jpg" data-lightbox="example-set" data-title="Or press the right arrow on your keyboard."></a>
+                <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-5.jpg" data-lightbox="example-set" data-title="The next image in the set is preloaded as you're viewing."></a>
+                <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-6.jpg" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close."></a>
+            </div>
+
+
+        </div>
+    </div>
+
+<div class="row"> <div class="col-sm-12" style="background-color: white; margin-top: 10px;"></div></div>
+<!-- FOOTER -->
+<div class="row">
+   <div class="col-sm-12">
+        {% include 'footer.html' %}
+   </div>
+</div>
+</div>
+
+</body>
+{% endblock %}
+</html>

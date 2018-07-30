@@ -1,0 +1,130 @@
+
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{% block title %} Contact {% endblock %}</title>
+    {% include 'header.html' %}
+
+</head>
+<body>
+<div class="container-fluid" style="margin-top: 75px;">
+{% include 'nav.html' %}
+<div class="container">
+    <div class="row">
+    <div class="col-sm-12">
+        <div class="card bg-danger text-white" style="height: 50px;">
+
+    <div class="card-body" style="text-align:left; margin-top: -10px;">
+        <h3>Contact</h3>
+    </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="row"> <div class="col-sm-12" style="background-color: white; margin-top: 10px;"></div></div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-xl-7">
+            <div class="form-group">
+                <form action="." method="post" role="form" class="contact-form">{% csrf_token %}
+                    {{ form.as_p }}
+                <input type="submit" value="send" class="btn btn-info">
+
+                </form>
+            </div>
+
+
+            </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-6 col-xl-5">
+            <h2>Contact Information</h2>
+            <h6>Please don't hesitate to contact me for more information about my work.</h6>
+            <p></p>
+            <ul class="contact-icons">
+                <li><i class="fa fa-map-marker fa-2x"></i><p>Fatullah, Narayangonj, Bangladesh</p>
+                </li>
+
+                <li><i class="fa fa-phone fa-2x"></i>
+                    <p>+ 01719-33 74 56</p>
+                </li>
+
+                <li><i class="fa fa-envelope fa-2x"></i>
+                    <p>contact: nabirhossain13@gmail.com</p>
+                </li>
+            </ul>
+        </div>
+        <!--Grid column-->
+
+
+
+
+
+
+
+
+
+    </div>
+
+</div>
+    <!-- FOOTER -->
+<div class="row">
+   <div class="col-sm-12">
+        {% include 'footer.html' %}
+   </div>
+</div>
+
+</div>
+
+</body>
+</html>
+<!--
+
+<form method="post" action="/thankyou/">{% csrf_token %}
+            <div class="form-group">
+        <div class="name">
+          <label class="label">Name  <span class="required">*</span></label>
+            <span class="span">
+              <input name= "firstname" class="inputtext" maxlength="255" size="12" />
+              <label class="spanlabel">First</label>
+            </span>
+        </div>
+            </div>
+            <div class="form-group">
+            <span class="span">
+              <input name= "lastname" class="inputtext" maxlength="255" size="18" />
+              <label class="spanlabel">Last</label>
+            </span>
+        </div>
+            <div class="form-group">
+        <div class="email">
+          <label class="label">Email Address  <span class="required">*</span></label>
+          <input name="email" class="inputtext" type="text" maxlength="255" size="35" />
+        </div>
+            </div>
+            <div class="form-group">
+        <div class="subject">
+          <label class="label">Subject  <span class="required">*</span></label>
+          <input name="subject" class="inputtext" type="text" maxlength="255" size="45" />
+        </div>
+            </div>
+            <div class="form-group">
+        <div class="botcheck">
+            <label class="label">You must answer <u>YES</u> to the question below to<br /> approve sending this email.  <span class="required">*</span>Do you want to send me an email?</label>
+            <input name="botcheck" class="inputtext" type="text" maxlength="5" size="5" />
+        </div>
+            </div>
+            <div class="form-group">
+            <div class="message">
+          <label class="label">Message  <span class="required">*</span></label>
+          <textarea name="message" class="inputtextarea" rows="11" cols="45"></textarea>
+        </div>
+        </div>
+        <div class="button">
+          <button class="btn btn-info"><input class="submitform" type="submit" name="submitform" value="Send Message" /></button>
+        </div>
+      </form>
+-->

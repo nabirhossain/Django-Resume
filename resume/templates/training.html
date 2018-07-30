@@ -1,0 +1,95 @@
+
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{% block title %} Training {% endblock %}</title>
+    {% include 'header.html' %}
+</head>
+<body>
+<div class="container-fluid" style="margin-top: 75px;">
+{% include 'nav.html' %}
+<div class="container">
+    <div class="row">
+    <div class="col-sm-12">
+        <div class="card bg-danger text-white" style="height: 50px;">
+
+    <div class="card-body" style="text-align:left; margin-top: -10px;">
+        <h3>Training</h3>
+    </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <!-- Accounting  -->
+   <div class="row"> <div class="col-sm-12" style="background-color: white; margin-top: 10px;"></div></div>
+<div class="container">
+        <div class="row">
+            <div class="col-sm-8" style="background-color: rgb(0, 240, 162);">
+                <h3 class="text-dark"><b> Certificate course on Practical Accounting </b></h3>
+            </div>
+        <div class="col-sm-4" style="background-color: rgb(0, 240, 162);">
+        <h4 class="text-white">12 Hours</h4>
+        </div>
+        </div>
+</div>
+    <div class="row"> <div class="col-sm-12" style="background-color: white; margin-top: 10px;"></div></div>
+    <div class="container">
+    <div class="row">
+    <div class="col-sm-6" style="background-color: DodgerBlue;">
+        <h3 style="color: white;">Institute Name: <b>BDJobs Training Center</b></h3>
+        <h3 style="color: white;">Key Word:  </h3>
+            <h4 style="color: white;"><b>01. Financial Accounting Process</b></h4>
+            <h4 style="color: white;"><b>02. Financial Accounting Activities</b></h4>
+            <h4 style="color: white;"><b>03. Financial Accounting Information System (Setting up a Xero System)</b></h4>
+            <h4 style="color: white;"><b>04. Financial Budgeting etc.</b></h4>
+
+       <h3 style="color: white;">Result: <b> Successfully completed</b></h3>
+    </div>
+        <div class="col-sm-6" style="background-color: DodgerBlue;">
+             <img src="{% static 'img/practical_accounting.jpg' %}" class="img-thumbnail" alt="Responsive image" style="height: 285px; width: 95%; margin-top: 8px;">
+        </div>
+    </div>
+    </div>
+    <!-- Computer  -->
+<div class="row"> <div class="col-sm-12" style="background-color: white; margin-top: 10px;"></div></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8" style="background-color: rgb(0, 240, 162);">
+                <h3 class="text-dark"><b>Computer Basic Course</b></h3>
+            </div>
+        <div class="col-sm-4" style="background-color: rgb(0, 240, 162);">
+        <h4 class="text-white">June 2010 to December 2010</h4>
+        </div>
+        </div>
+</div>
+    <div class="row"> <div class="col-sm-12" style="background-color: white; margin-top: 10px;"></div></div>
+    <div class="container">
+    <div class="row">
+    <div class="col-sm-6" style="background-color: rgb(169, 18, 210);">
+        <h3 style="color: white;">Institute Name: <b>National Youth Development Center</b></h3>
+        <h3 style="color: white;">Key Word:  </h3>
+            <h4 style="color: white;"><b>01. Microsoft Word</b></h4>
+            <h4 style="color: white;"><b>02. Microsoft Excel</b></h4>
+            <h4 style="color: white;"><b>03. Microsoft Powerpoint</b></h4>
+            <h4 style="color: white;"><b>04. Microsoft Excess</b></h4>
+
+       <h3 style="color: white;">Result: <b>Successfully Completed</b></h3>
+    </div>
+        <div class="col-sm-6" style="background-color: rgb(169, 18, 210);;">
+             <img src="{% static 'img/Computer.jpg' %}" class="img-thumbnail" alt="Responsive image" style="height: 290px; width: 95%; margin-top: 8px;">
+        </div>
+    </div>
+    </div>
+
+<!-- Footer  -->
+
+<div class="row"> <div class="col-sm-12" style="background-color: white; margin-top: 10px;"></div></div>
+<div class="row">
+    <div class="col-sm-12">
+        {% include 'footer.html' %}
+    </div>
+</div>
+</body>
+</html>
