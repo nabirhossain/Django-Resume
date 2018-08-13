@@ -26,7 +26,7 @@ SECRET_KEY = '&j3z#&yyvdxa%_q45&d$l3y)mar9jlcc^b+-1-k)v&sr0!%lve'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://frozen-castle-38667.herokuapp.com']
 
 
 # Application definition
